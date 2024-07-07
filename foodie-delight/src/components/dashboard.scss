@@ -1,0 +1,78 @@
+@import "./../App.scss";
+
+.dashboard-container{
+  display: flex;
+  width: 100%;
+  .sidebar-container{
+    width: 300px;
+    background-color: $background-color;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo-container{
+      border-left: 5px solid $primary-yellow;
+      padding-left: 10px;
+      margin: 15px 30px;
+      .logo{
+        text-align: center;
+      }
+    }
+    .icon-container{
+      margin-top: 75px;
+      border-radius: 130px;
+      background-color: $primary-white;
+      height: 130px;
+      width: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .icon{
+        width: 90px;
+        height: 90px;
+      }
+    }
+    .user-name{
+      font-weight: bold;
+      color: $primary-dark;
+      margin: 10px;
+      font-size: 20px;
+    }
+    .user-role{
+      color: $primary-yellow;
+      font-weight: bold;
+    }
+    .nav-container{
+      margin-top: 20px;
+      ul{
+        list-style: none;
+      }
+      .nav-link{
+        height: 50px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+          text-decoration: none;
+          color: $primary-dark;
+        }
+        &:hover{
+          background-color: $primary-yellow;
+        }
+      }
+    }
+    .logout-link{
+      text-decoration: none;
+      color: $primary-yellow;
+      margin-top: auto;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+  }
+  .main-content{
+    margin-left: 300px;
+    width: 100%;
+  }
+}

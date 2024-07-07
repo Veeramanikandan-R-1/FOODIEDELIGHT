@@ -1,0 +1,114 @@
+@import "../../App.scss";
+
+.input-container{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    input{
+        margin-top: 5px;
+        border: 1px solid $secondary-dark;
+        height: 37.5px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .error-msg{
+        color: $primary-error;
+        font-size: 12px;
+        text-align: right;
+    }
+}
+.required{
+    label:after{
+        content:"*";
+        color: red;
+    }
+
+}
+
+.button-container{
+    margin: 10px;
+    button{
+        width: 250px;
+        height: 40px;
+        background-color: $primary-yellow;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.loader-container{
+    pointer-events: all;
+    z-index: 99999;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    background-color: rgba(232, 223, 223, 0.6);
+    .loading-msg{
+        position: relative;
+        top: 50%;
+        left: 47%;
+    }   
+}
+
+.modal-container{
+    .modal {
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+        z-index: 1; 
+        width: 100%;
+        height: 100%; 
+        position: fixed; 
+        top: 0;
+        left: 0;
+        overflow: auto; 
+        padding-top: 80px; 
+    }
+    .modal-content {
+        background-color: white;
+        width: 400px;
+        max-width: 640px; 
+        height: 300px; 
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 20px; 
+        margin-left: 40%;
+        margin-top: 7%;
+
+        .main-content-container{
+            height: 80%;
+            margin: 30px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .confirm-string{
+                margin-top: 50px;
+                font-size: 20px;
+            }
+
+            .action-buttons{
+                margin-top: 50px;
+            }
+        }
+    }
+    .close {
+       color: #aaaaaa;
+       float: right;
+       font-size: 25px;
+       font-weight: bold;
+    }
+    .close:hover, 
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
