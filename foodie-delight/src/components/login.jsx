@@ -70,7 +70,7 @@ const Login = () => {
                 <div>
                     <CustomButton label="SIGN IN" onClick={submitHandler} disabled={!userName || !password}/>
                 </div>
-                <p className='note'>NOTE: sample login for demo -{'>'} Username: admin, Password: admin123</p>
+                <p className='note'>NOTE: sample login for demo -{'>'} Username: admin, Password: admin@123</p>
             </div>
         </div>
     )
